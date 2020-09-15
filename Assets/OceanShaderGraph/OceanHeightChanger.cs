@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,18 +13,20 @@ public class OceanHeightChanger : MonoBehaviour
      public void OnValueChanged(float newValue)
  {
     // audio.volume = newValue;
-     oceanPlane.transform.position = new Vector3(0.07f, newValue, -0.23f);
+     oceanPlane.transform.position = new Vector3(0.006f, newValue, -0.023f);
     var emission = radiation.emission;
-if (newValue <= 1.7f){
-          emission.rateOverTimeMultiplier = 20;
+
+
+if (newValue <= 0.16f){
+          emission.rateOverTimeMultiplier = 30;
 
      }
-     if (newValue <= 1.85f && newValue > 1.7f){
+     if (newValue <= 0.17f && newValue > 0.16f){
           emission.rateOverTimeMultiplier = 100;
          // gcLow.Play();
 
      }
-     if (newValue > 1.85f) {
+     if (newValue > 0.17f) {
           emission.rateOverTimeMultiplier = 300;
 
      } }
