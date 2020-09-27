@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
-  - enabled: 1
-    path: Assets/OceanShaderGraph/OceanIslandScene.unity
+  - enabled: 0
+    path: Assets/Scenes/OceanIslandScene.unity
     guid: 32f456b81a65c8648ae1c7f7375fa68b
+  - enabled: 1
+    path: Assets/Scenes/BubblesScene.unity
+    guid: 35266a98b48d46246879c92a63d43fd8
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 99103c70c5d8fd8418e47bb733c8463c,
       type: 2}
